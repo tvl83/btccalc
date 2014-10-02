@@ -1,7 +1,7 @@
 {
   "name": "BTC Calculator",
-  "description": "Quick Reference Bitcoin Calculator",
-  "version": "0.1",
+  "description": "Quick Reference BitCoin Calculator",
+  "version": "0.4",
   "manifest_version": 2,
   "app": {
     "background": {
