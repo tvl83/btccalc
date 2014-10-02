@@ -1,0 +1,20 @@
+{
+  "name": "BTC Calculator",
+  "description": "Quick Reference Bitcoin Calculator",
+  "version": "0.1",
+  "manifest_version": 2,
+  "app": {
+    "background": {
+      "scripts": [
+        "/js/background.js"
+      ]
+    }
+  },
+  "permissions": [
+    "https://api.coinbase.com/*",
+    "https://cloud.zenminer.com/*"
+  ],
+  "icons": {
+    "16": "/images/calculator-16.png",
+    "128": "/images/calculator-128.png" }
+}

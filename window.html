@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>BTC Calculator</title>
+      <script src="js/vendor/jquery-2.1.1.min.js"></script>
+      <script src="js/btccalc.js"></script>
+      <script src="js/vendor/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="css/bootstrap.min.css" />
+      <style type="text/css">
+          .sticky-footer{
+              bottom:0;
+              position:fixed
+          }
+      </style>
+  </head>
+  <body>
+  <div class="container">
+    <div class="row">
+        <div class="col-xs-12">BTC Price:
+            <span id="btcprice" style="font-weight: bold"></span>
+            <button id="btnRefreshBTCPrice"><span class="glyphicon glyphicon-refresh"></span></button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="form-group">
+                <label for="btc">USD</label>
+                <input type="text" class="form-control" id="usd" placeholder="US Dollar (USD)">
+            </div>
+            <div class="form-group">
+                <label for="btc">BTC</label>
+                <input type="text" class="form-control" id="btc" placeholder="BitCoin (BTC)">
+            </div>
+            <div class="form-group">
+                <label for="mbtc">mBTC</label>
+                <input type="text" class="form-control" id="mbtc" placeholder="milliBitCoin (mBTC)">
+            </div>
+            <div class="form-group">
+                <label for="ubtc">uBTC</label>
+                <input type="text" class="form-control" id="ubtc" placeholder="microBitCoin (uBTC)">
+            </div>
+            <div class="form-group">
+                <label for="satoshi">satoshi</label>
+                <input type="text" class="form-control" id="satoshi" placeholder="satoshi">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+          <span id="total"></span>
+      </div>
+    </div>
+  </div>
+
+
+    <div class="sticky-footer">
+        <p class="muted credit">Created by Thomas Le. BTC Price from
+            <a href="https://www.coinbase.com/?r=541c0b0f8edada3bd3000009&utm_campaign=user-referral&src=referral-link" target="_blank">coinbase.com</a>.<br />
+            Donations: 19SxbN1odamj1THVsqW7BfpiCir1SsrFjP
+        </p>
+    </div>
+  </body>
+</html>
