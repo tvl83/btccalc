@@ -30,16 +30,15 @@ $( document ).ready( function(){
     );
 
     txtUSD.keyup(function() {
-      txtBTC.val( parseFloat(txtUSD.val()) / btcPrice);
-      txtmBTC.val( (parseFloat(txtUSD.val()) / btcPrice) * 1000 );
-      txtmBTC.val( (parseFloat(txtUSD.val()) / btcPrice) * 1000000 );
-      txtuBTC.val( (parseFloat(txtUSD.val()) / btcPrice) * 1000000 );
-      txtsatoshi.val( ((parseFloat(txtUSD.val()) / btcPrice) * 100000000) );
+      txtBTC.val(      (parseFloat(txtUSD.val()) / btcPrice).toFixed(8) );
+      txtmBTC.val(    ((parseFloat(txtUSD.val()) / btcPrice) * 1000).toFixed(8) );
+      txtuBTC.val(    ((parseFloat(txtUSD.val()) / btcPrice) * 1000000).toFixed(8) );
+      txtsatoshi.val( ((parseFloat(txtUSD.val()) / btcPrice) * 100000000).toFixed(8) );
 
       value = parseFloat(txtBTC.val()) * btcPrice;
 
       totalOutput.text( txtBTC.val() + " BTC is $" + value.toFixed(2));
-      txtUSD.val(value.toFixed(2));
+      //txtUSD.val(value.toFixed(2));
     });
 
     txtBTC.keyup(function() {
