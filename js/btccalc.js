@@ -10,12 +10,19 @@ $( document ).ready( function(){
     var txtsatoshi = $('#satoshi');
     var totalOutput = $('#total');
 
+    // Node-webkit variables
+    var nw = require('nw.gui');
+    var win = nw.Window.get();
+        win.height = 400;
+        win.width = 400;
+        win.setResizable(false);
 
     function refreshBTCPrice(){
-      $('#btcprice').text('$ ??? ');
-      $.ajax({
-        url: "https://api.coinbase.com/v1/prices/spot_rate"
-      })
+        $('#btcprice').text('$ ??? ');
+
+        $.ajax({
+            url: "https://api.coinbase.com/v1/prices/spot_rate"
+        })
         .done(function( data ) {
           now = new Date();
           btcPrice = data.amount;
@@ -89,6 +96,23 @@ $( document ).ready( function(){
       txtUSD.val(value.toFixed(2));
     });
 
-    refreshBTCPrice();
+        refreshBTCPrice();
+
+
+        document.getElementById('windowControlMinimize').onclick = function()
+        {
+            win.minimize();
+        };
+
+        // Close
+        document.getElementById('windowControlClose').onclick = function()
+        {
+            win.close();
+        };
+
+//        var Engine = require('tingodb')();
+//
+//        var db = new Engine.Db('/some/local/path', {});
   }
 );
+

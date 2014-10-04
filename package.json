@@ -1,9 +1,14 @@
 {
-    "main": "window.html",
-    "name": "BTC Calculator",
-    "window":
-    {
-        "toolbar": false,
-        "frame"  : false
-    }
+  "main": "window.html",
+  "name": "btcalc",
+  "version": 1,
+  "window": {
+    "frame": false,
+    "toolbar": false,
+    "height": 1050,
+    "width": 400
+  },
+  "devDependencies": {
+    "node-webkit-builder": "~0.1.3"
+  }
 }
