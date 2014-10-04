@@ -110,7 +110,7 @@ $( document ).ready( function(){
             win.close();
         };
 
-//        var Engine = require('tingodb')();
+        var Engine = require('tingodb')();
 //
 //        var db = new Engine.Db('/some/local/path', {});
   }
