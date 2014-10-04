@@ -1,0 +1,9 @@
+{
+    "main": "window.html",
+    "name": "BTC Calculator",
+    "window":
+    {
+        "toolbar": false,
+        "frame"  : false
+    }
+}
