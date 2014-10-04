@@ -1,5 +1,4 @@
 #BitCalc
-==============
 
 Quick Reference BitCoin Calculator.
 
@@ -9,10 +8,13 @@ It pulls the price from [Coinbase](coinbase.com) to get the USD value. More deno
 
 ##Downloads
 
-[Windows](http://bitcalc.thomasle.info/bitcalc-win.zip)
-[Linux 32-bit](http://bitcalc.thomasle.info/bitcalc-linux32.zip)
-[Linux 64-bit](http://bitcalc.thomasle.info/bitcalc-linux64.zip)
-[Mac](http://bitcalc.thomasle.info/bitcalc-mac.zip)
+[Windows](http://bitcalc.thomasle.info/btcalc-win.zip)
+
+[Linux 32-bit](http://bitcalc.thomasle.info/btcalc-linux32.zip)
+
+[Linux 64-bit](http://bitcalc.thomasle.info/btcalc-linux64.zip)
+
+[Mac](http://bitcalc.thomasle.info/btcalc-osx.zip)
 
 Note: These are a little large because of the overhead required for it to be a node-webkit application. It uses chromium in the background which is not a lite program.
 That is why my tiny little calculator is 20mb+ on windows :(
