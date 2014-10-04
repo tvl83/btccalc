@@ -13,9 +13,7 @@ $( document ).ready( function(){
     // Node-webkit variables
     var nw = require('nw.gui');
     var win = nw.Window.get();
-        win.height = 400;
-        win.width = 400;
-        win.setResizable(false);
+    win.setResizable(false);
 
     function refreshBTCPrice(){
         $('#btcprice').text('$ ??? ');
@@ -109,8 +107,8 @@ $( document ).ready( function(){
         {
             win.close();
         };
-
-        var Engine = require('tingodb')();
+//
+//        var Engine = require('tingodb')();
 //
 //        var db = new Engine.Db('/some/local/path', {});
   }

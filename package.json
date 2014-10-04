@@ -5,7 +5,7 @@
   "window": {
     "frame": false,
     "toolbar": false,
-    "height": 550,
+    "height": 565,
     "width": 400
   },
   "devDependencies": {
