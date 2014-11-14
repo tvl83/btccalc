@@ -35,10 +35,14 @@ $( document ).ready( function(){
     );
 
     txtUSD.keyup(function() {
-      txtBTC.val(      (parseFloat(txtUSD.val()) / btcPrice).toFixed(8) );
-      txtmBTC.val(    ((parseFloat(txtUSD.val()) / btcPrice) * 1000).toFixed(8) );
-      txtuBTC.val(    ((parseFloat(txtUSD.val()) / btcPrice) * 1000000).toFixed(8) );
-      txtsatoshi.val( ((parseFloat(txtUSD.val()) / btcPrice) * 100000000).toFixed(8) );
+      txtBTC
+          .val( (parseFloat(txtUSD.val()) / btcPrice).toFixed(8) );
+      txtmBTC
+          .val(((parseFloat(txtUSD.val()) / btcPrice) * 1000).toFixed(8) );
+      txtuBTC
+          .val(((parseFloat(txtUSD.val()) / btcPrice) * 1000000).toFixed(8) );
+      txtsatoshi
+          .val(((parseFloat(txtUSD.val()) / btcPrice) * 100000000).toFixed(8) );
 
       value = parseFloat(txtBTC.val()) * btcPrice;
 
@@ -47,9 +51,12 @@ $( document ).ready( function(){
     });
 
     txtBTC.keyup(function() {
-      txtmBTC.val( parseFloat(txtBTC.val()) * 1000);
-      txtuBTC.val( parseFloat(txtBTC.val()) * 1000000);
-      txtsatoshi.val( (parseFloat(txtBTC.val()) * 100000000));
+      txtmBTC
+          .val( parseFloat(txtBTC.val()) * 1000);
+      txtuBTC
+          .val( parseFloat(txtBTC.val()) * 1000000);
+      txtsatoshi
+          .val((parseFloat(txtBTC.val()) * 100000000));
 
       value = parseFloat(txtBTC.val()) * btcPrice;
 
@@ -59,9 +66,12 @@ $( document ).ready( function(){
     });
 
     txtmBTC.keyup(function() {
-      txtBTC.val(parseFloat(txtmBTC.val()) / 1000);
-      txtuBTC.val( parseFloat(txtmBTC.val()) * 1000);
-      txtsatoshi.val( (parseFloat(txtmBTC.val()) * 100000));
+      txtBTC
+          .val( parseFloat(txtmBTC.val()) / 1000);
+      txtuBTC
+          .val( parseFloat(txtmBTC.val()) * 1000);
+      txtsatoshi
+          .val((parseFloat(txtmBTC.val()) * 100000));
 
       value = parseFloat(txtBTC.val()) * btcPrice;
 
@@ -71,9 +81,12 @@ $( document ).ready( function(){
     });
 
     txtuBTC.keyup(function() {
-      txtBTC.val(parseFloat(txtuBTC.val()) / 1000000);
-      txtmBTC.val( parseFloat(txtuBTC.val()) / 1000);
-      txtsatoshi.val( (parseFloat(txtuBTC.val()) * 100));
+      txtBTC
+          .val( parseFloat(txtuBTC.val()) / 1000000);
+      txtmBTC
+          .val( parseFloat(txtuBTC.val()) / 1000);
+      txtsatoshi
+          .val((parseFloat(txtuBTC.val()) * 100));
 
       value = parseFloat(txtBTC.val()) * btcPrice;
 
@@ -83,9 +96,12 @@ $( document ).ready( function(){
     });
 
     txtsatoshi.keyup(function() {
-      txtBTC.val( (parseFloat(txtsatoshi.val()) / 100000000).toFixed(8));
-      txtmBTC.val( parseFloat(txtsatoshi.val()) / 1000);
-      txtuBTC.val( (parseFloat(txtsatoshi.val()) / 100));
+      txtBTC
+          .val((parseFloat(txtsatoshi.val()) / 100000000).toFixed(8));
+      txtmBTC
+          .val( parseFloat(txtsatoshi.val()) / 100000);
+      txtuBTC
+          .val((parseFloat(txtsatoshi.val()) / 100));
 
       value = parseFloat(txtBTC.val()) * btcPrice;
 
@@ -94,23 +110,18 @@ $( document ).ready( function(){
       txtUSD.val(value.toFixed(2));
     });
 
-        refreshBTCPrice();
+    refreshBTCPrice();
 
+    document.getElementById('windowControlMinimize').onclick = function()
+    {
+        win.minimize();
+    };
 
-        document.getElementById('windowControlMinimize').onclick = function()
-        {
-            win.minimize();
-        };
-
-        // Close
-        document.getElementById('windowControlClose').onclick = function()
-        {
-            win.close();
-        };
-//
-//        var Engine = require('tingodb')();
-//
-//        var db = new Engine.Db('/some/local/path', {});
+    // Close
+    document.getElementById('windowControlClose').onclick = function()
+    {
+        win.close();
+    };
   }
 );
 

@@ -29,6 +29,6 @@ Clone this repository if you already have [Node Webkit](https://github.com/roger
 * Choose a different exchange to retrieve the value
 
 
-If you like this app please consider donating to `19SxbN1odamj1THVsqW7BfpiCir1SsrFjP` :) Thank you!
+If you like this app please consider donating to BTC `1HBQyFv2QhP9bi7XeXrWFcVFG7naXWyZYc` or LTC `LerZWsfdKqBud46GTdnDSevLc9sqSqPn7Z` :) Thank you!
 
 
